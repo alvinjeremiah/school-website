@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greenwood High School</title>
+  <link rel="stylesheet" href="admission.css" />
+</head>
+<body>
+  <header>
+    <div class="left-section">
+      <a href="index.html"><img src="logo.png!w700wp" id="logo" alt="School Logo"></a>
+      <h1>Greenwood High School</h1>
+    </div>
+    <nav class="nav-section">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="#">Academic</a></li>
+        <li><a href="#">Achievements</a></li>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+
+
+<section id="admissions">
+    <h2>Admissions</h2>
+    <p>Admissions are open for the academic year 2025-2026. Fill out the form below to apply.</p>
+    <form id="admissionForm" onsubmit="applyNow()">
+      <label for="studentName">Student Name:</label><br />
+      <input type="text" id="studentName" name="studentName" required /><br /><br />
+
+      <label for="dob">Date of Birth:</label><br />
+      <input type="date" id="dob" name="dob" required /><br /><br />
+
+      <label for="grade">Grade Applying For:</label><br />
+      <select id="grade" name="grade" required>
+        <option value="">Select Grade</option>
+        <option value="1">Grade 1</option>
+        <option value="2">Grade 2</option>
+        <option value="3">Grade 3</option>
+        <option value="4">Grade 4</option>
+        <option value="5">Grade 5</option>
+      </select><br /><br />
+
+      <label for="parentName">Parent/Guardian Name:</label><br />
+      <input type="text" id="parentName" name="parentName" required /><br /><br />
+
+      <label for="contact">Contact Number:</label><br />
+      <input type="tel" id="contact" name="contact" required /><br /><br />
+
+      <label for="email">Email Address:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="country">Country:</label><br />
+      <select id="country" name="country">
+             <option value="">Loading countries...</option>
+        </select>
+
+      <label for="state">State:</label>
+        <select id="state" disabled>
+            <option value="">Select a country first</option>
+        </select>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@greenwoodhigh.edu<br>Phone: (123) 456-7890</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Greenwood High School. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
