@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Greenwood High School</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+    <header>
+    <div class="left-section">
+      <a href="index.html"><img src="logo.png!w700wp" id="logo" alt="School Logo"></a>
+      <h1>Greenwood High School</h1>
+    </div>
+    <nav class="nav-section">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="#">Academic</a></li>
+        <li><a href="#">Achievements</a></li>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contact-wrapper">
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form onsubmit="return handleSubmit();">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" required />
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <h3>Greenwood High School</h3>
+      <p>123 Education Street,<br>Cityville, State, Country</p>
+
+      <h3>Phone</h3>
+      <p>+91-9876543210</p>
+
+      <h3>Email</h3>
+      <p>info@greenwoodhigh.edu</p>
+
+      <h3>Location</h3>
+      <iframe src="https://www.google.com/maps?q=Greenwood+High+School&output=embed"></iframe>
+    </div>
+  </div>
+
+  <script>
+    function handleSubmit() {
+      alert("Thank you! Your message has been sent.");
+      return false; // prevent real submission
+    }
+  </script>
+
+</body>
+</html>
